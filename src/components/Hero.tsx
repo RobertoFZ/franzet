@@ -14,11 +14,11 @@ export default function Hero({ contentLoaded }: HeroProps) {
         style={getAnimationDelay(0.3)}
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          <div className="mb-2">I'm <span className="bg-[#ff4d6d] text-white px-3 sm:px-4 py-1 sm:py-2 inline-block">Roberto Franco</span>-</div>
+          <div className="mb-2">I&apos;m <span className="bg-[#ff4d6d] text-white px-3 sm:px-4 py-1 sm:py-2 inline-block">Roberto Franco</span>-</div>
           <div className="mb-2">your growth partner in software engineering</div>
         </h1>
         <p className="text-gray-600 mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0 text-sm sm:text-base">
-          From confused PRs to confidently shipping production code, I'll guide you every sprint of the way.
+          From confused PRs to confidently shipping production code, I&apos;ll guide you every sprint of the way.
         </p>
         <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center md:justify-start">
           <Button href="mailto:roberto@franzet.com" variant="primary">

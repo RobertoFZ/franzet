@@ -38,7 +38,7 @@ export default function Navbar({ contentLoaded }: NavbarProps) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [mobileMenuOpen]);
+  }, [mobileMenuOpen, toggleMobileMenu]);
   
   const animateButton = () => {
     setIsButtonAnimating(true);
