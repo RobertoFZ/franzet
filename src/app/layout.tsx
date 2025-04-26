@@ -10,8 +10,36 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "I'm Roberto Franco - here to turn your coding potential into real-world impact.",
-  description: "Senior software engineer & tech-lead (6+ yrs) who's shipped products used by thousands in Latin-America. I mentor aspiring and junior developers so they can level-up faster, ship with confidence, and land roles they're proud of.",
+  title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
+  description: "1-on-1 mentoring that turns junior developers into confident, job-ready engineers. Book a free strategy session with Roberto Franco today.",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://franzet.com/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://franzet.com/",
+    title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
+    description: "Hands-on guidance, custom roadmaps, and accountability to help you ship production-ready code faster.",
+    siteName: "Roberto Franco Mentoring",
+    images: [
+      {
+        url: "https://franzet.com/og_cover.jpg",
+        alt: "Roberto Franco - Software Engineer Mentor",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
+    description: "Level-up your dev career with 1-on-1 mentoring. Book a free strategy session.",
+    site: "@RobeertoFZ",
+    creator: "@RobeertoFZ",
+    images: ["https://franzet.com/og_twitter_cover.jpg"],
+  },
+  other: {
+    "X-UA-Compatible": "IE=edge",
+  }
 };
 
 export default function RootLayout({
@@ -21,6 +49,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Roberto Franco",
+              "jobTitle": "Software-Engineering Mentor",
+              "description": "Senior software engineer and tech-lead offering personalized mentoring for early-career developers.",
+              "url": "https://franzet.com/",
+              "image": "https://franzet.com/og_cover.jpg",
+              "sameAs": [
+                "https://www.linkedin.com/in/robertofz/",
+                "https://github.com/RobertoFZ"
+              ]
+            })
+          }}
+        />
+      </head>
       <body className={`${poppins.variable} font-sans`}>
         {children}
       </body>
