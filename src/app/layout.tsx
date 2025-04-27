@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Roberto Franco Mentoring",
     images: [
       {
-        url: "https://franzet.com/og_cover.jpg",
+        url: "https://franzet.com/og_cover.png",
         alt: "Roberto Franco - Software Engineer Mentor",
       },
     ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Level-up your dev career with 1-on-1 mentoring. Book a free strategy session.",
     site: "@RobeertoFZ",
     creator: "@RobeertoFZ",
-    images: ["https://franzet.com/og_twitter_cover.jpg"],
+    images: ["https://franzet.com/og_twitter_cover.png"],
   },
   other: {
     "X-UA-Compatible": "IE=edge",
@@ -64,7 +64,7 @@ export default function RootLayout({
               "jobTitle": "Software-Engineering Mentor",
               "description": "Senior software engineer and tech-lead offering personalized mentoring for early-career developers.",
               "url": "https://franzet.com/",
-              "image": "https://franzet.com/og_cover.jpg",
+              "image": "https://franzet.com/og_cover.png",
               "sameAs": [
                 "https://www.linkedin.com/in/robertofz/",
                 "https://github.com/RobertoFZ"
