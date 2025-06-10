@@ -30,6 +30,11 @@ export default function Hero({ contentLoaded }: HeroProps) {
           </Button>
           */}
         </div>
+        
+        {/* Additional SEO content */}
+        <div className="mt-8 text-xs text-gray-500 hidden">
+          <p>Roberto Franco - Software Engineering Mentor, Tech Lead, AI Developer, JavaScript Expert, TypeScript Specialist, React Developer, Next.js Expert, Career Coach for Software Engineers</p>
+        </div>
       </div>
       <div 
         className={`relative order-1 md:order-2 flex justify-center md:justify-end mb-10 md:mb-0 transition-opacity duration-700 ${contentLoaded ? ANIMATIONS.SCALE_IN : 'opacity-0'}`} 
@@ -37,7 +42,7 @@ export default function Hero({ contentLoaded }: HeroProps) {
       >
         <Image
           src="/avatar.svg"
-          alt="Designer Avatar"
+          alt="Roberto Franco - Software Engineering Mentor and Tech Lead"
           width={500}
           height={500}
           priority

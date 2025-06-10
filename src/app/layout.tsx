@@ -59,16 +59,56 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
+              "@type": ["Person", "ProfessionalService"],
               "name": "Roberto Franco",
-              "jobTitle": "Software-Engineering Mentor",
-              "description": "Senior software engineer and tech-lead offering personalized mentoring for early-career developers.",
+              "alternateName": ["Roberto Franco Franzet", "RobertoFZ"],
+              "jobTitle": "Software Engineering Mentor & Tech Lead",
+              "description": "Senior software engineer, tech lead, and mentor specializing in revenue management systems, AI integration, and developer career growth. Helping junior developers become confident, job-ready engineers.",
               "url": "https://franzet.com/",
-              "image": "https://franzet.com/og_cover.png",
+              "image": {
+                "@type": "ImageObject",
+                "url": "https://franzet.com/og_cover.png",
+                "width": 1200,
+                "height": 630
+              },
+              "logo": "https://franzet.com/og_cover.png",
               "sameAs": [
                 "https://www.linkedin.com/in/robertofz/",
-                "https://github.com/RobertoFZ"
-              ]
+                "https://github.com/RobertoFZ",
+                "https://medium.com/@roberzet",
+                "https://twitter.com/RobeertoFZ"
+              ],
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Roberto Franco Mentoring",
+                "url": "https://franzet.com/"
+              },
+              "knowsAbout": [
+                "Software Engineering",
+                "Technical Leadership",
+                "Revenue Management",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Next.js",
+                "AI Development",
+                "Mentoring",
+                "Career Development"
+              ],
+              "offers": {
+                "@type": "Service",
+                "name": "Software Engineering Mentoring",
+                "description": "1-on-1 mentoring for junior developers and engineers looking to advance their careers"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "roberto@franzet.com",
+                "contactType": "professional"
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://franzet.com/"
+              }
             })
           }}
         />
