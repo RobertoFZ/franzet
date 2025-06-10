@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import MediumSection from "@/components/MediumSection";
+import SupportSection from "@/components/SupportSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <Navbar contentLoaded={contentLoaded} /> */}
       <Hero contentLoaded={contentLoaded} />
       <MediumSection contentLoaded={contentLoaded} />
+      <SupportSection contentLoaded={contentLoaded} />
       <Footer contentLoaded={contentLoaded} />
     </div>
   );
