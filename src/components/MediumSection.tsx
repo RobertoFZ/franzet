@@ -49,13 +49,13 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
     return tmp.textContent || tmp.innerText || "";
   };
 
-  const truncateDescription = (text: string, maxLength: number = 120) => {
-    const cleanText = stripHtml(text);
-    if (cleanText.length <= maxLength) return cleanText;
-    return cleanText.substring(0, maxLength).trim() + "...";
-  };
-
   useEffect(() => {
+    const truncateDescription = (text: string, maxLength: number = 120) => {
+      const cleanText = stripHtml(text);
+      if (cleanText.length <= maxLength) return cleanText;
+      return cleanText.substring(0, maxLength).trim() + "...";
+    };
+
     const fetchMediumPosts = async () => {
       try {
         setLoading(true);

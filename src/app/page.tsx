@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MediumSection from "@/components/MediumSection";
 import SupportSection from "@/components/SupportSection";
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#f9f8f6] text-black p-4 sm:p-6 md:p-8">
-      {/* <Navbar contentLoaded={contentLoaded} /> */}
+      <Navbar contentLoaded={contentLoaded} />
       <Hero contentLoaded={contentLoaded} />
       <MediumSection contentLoaded={contentLoaded} />
       <SupportSection contentLoaded={contentLoaded} />

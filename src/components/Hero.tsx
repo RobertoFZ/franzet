@@ -18,17 +18,15 @@ export default function Hero({ contentLoaded }: HeroProps) {
           <div className="mb-2">your growth partner in software engineering</div>
         </h1>
         <p className="text-gray-600 mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0 text-sm sm:text-base">
-          From confused PRs to confidently shipping production code, I&apos;ll guide you every sprint of the way.
+          Senior software engineer and tech lead specializing in revenue management systems, AI integration, and developer mentoring. From confused PRs to confidently shipping production code, I&apos;ll guide you every sprint of the way.
         </p>
         <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center md:justify-start">
           <Button href="mailto:roberto@franzet.com" variant="primary">
             Book a strategy session
           </Button>
-          {/*
-          <Button href="#" variant="secondary">
-            Browse mentoring plans
+          <Button href="/projects" variant="secondary">
+            View My Products
           </Button>
-          */}
         </div>
         
         {/* Additional SEO content */}
