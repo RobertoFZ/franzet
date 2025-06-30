@@ -14,24 +14,24 @@ export default function Hero({ contentLoaded }: HeroProps) {
         style={getAnimationDelay(0.3)}
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          <div className="mb-2">I&apos;m <span className="bg-[#ff4d6d] text-white px-3 sm:px-4 py-1 sm:py-2 inline-block">Roberto Franco</span>-</div>
-          <div className="mb-2">your growth partner in software engineering</div>
+          <div className="mb-2"><span className="bg-[#ff4d6d] text-white px-3 sm:px-4 py-1 sm:py-2 inline-block">Roberto Franco</span>-</div>
+          <div className="mb-2">tu growth partner en ingeniería de software</div>
         </h1>
         <p className="text-gray-600 mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0 text-sm sm:text-base">
-          Senior software engineer and tech lead specializing in revenue management systems, AI integration, and developer mentoring. From confused PRs to confidently shipping production code, I&apos;ll guide you every sprint of the way.
+          Ingeniero de software senior y tech lead especializado en sistemas de revenue management, integración de IA y mentoría de desarrolladores. De PRs confusos a enviar código a producción con confianza, te guiaré en cada sprint del camino.
         </p>
         <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center md:justify-start">
           <Button href="mailto:roberto@franzet.com" variant="primary">
-            Book a strategy session
+            Reserva una sesión de estrategia
           </Button>
           <Button href="/projects" variant="secondary">
-            View My Products
+            Ver Mis Productos
           </Button>
         </div>
         
         {/* Additional SEO content */}
         <div className="mt-8 text-xs text-gray-500 hidden">
-          <p>Roberto Franco - Software Engineering Mentor, Tech Lead, AI Developer, JavaScript Expert, TypeScript Specialist, React Developer, Next.js Expert, Career Coach for Software Engineers</p>
+          <p>Roberto Franco - Mentor de Ingeniería de Software, Tech Lead, Desarrollador IA, Experto JavaScript, Especialista TypeScript, Desarrollador React, Experto Next.js, Coach de Carrera para Ingenieros de Software</p>
         </div>
       </div>
       <div 
@@ -40,7 +40,7 @@ export default function Hero({ contentLoaded }: HeroProps) {
       >
         <Image
           src="/avatar.svg"
-          alt="Roberto Franco - Software Engineering Mentor and Tech Lead"
+          alt="Roberto Franco - Mentor de Ingeniería de Software y Tech Lead"
           width={500}
           height={500}
           priority

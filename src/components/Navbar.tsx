@@ -18,19 +18,19 @@ export default function Navbar({ contentLoaded }: NavbarProps) {
             href="/" 
             className="text-gray-700 hover:text-[#ff4d6d] transition-colors duration-300 font-medium"
           >
-            Home
+            Inicio
           </Link>
           <Link 
             href="/projects" 
             className="text-gray-700 hover:text-[#ff4d6d] transition-colors duration-300 font-medium"
           >
-            Products
+            Productos
           </Link>
           <Link 
             href="mailto:roberto@franzet.com"
             className="bg-[#ff4d6d] hover:bg-[#e63c5e] text-white px-4 py-2 rounded-lg transition-colors duration-300 font-medium text-sm"
           >
-            Contact
+            Contacto
           </Link>
         </div>
       </div>

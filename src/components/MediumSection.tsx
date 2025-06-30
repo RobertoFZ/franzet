@@ -33,10 +33,10 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
     const diffTime = Math.abs(now.getTime() - date.getTime());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     
-    if (diffDays === 1) return "Yesterday";
-    if (diffDays < 30) return `${diffDays} days ago`;
+    if (diffDays === 1) return "Ayer";
+    if (diffDays < 30) return `Hace ${diffDays} días`;
     
-    return date.toLocaleDateString('en-US', { 
+    return date.toLocaleDateString('es-ES', { 
       month: 'short', 
       day: 'numeric',
       year: date.getFullYear() !== now.getFullYear() ? 'numeric' : undefined
@@ -69,13 +69,13 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
         const response = await fetch(proxyUrl);
         
         if (!response.ok) {
-          throw new Error('Failed to fetch Medium posts');
+          throw new Error('Error al obtener los posts de Medium');
         }
         
         const data = await response.json();
         
         if (data.status !== 'ok') {
-          throw new Error('RSS feed error');
+          throw new Error('Error en el feed RSS');
         }
 
         // Transform the first 3 posts to match our interface
@@ -89,26 +89,26 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
         setArticles(transformedArticles);
       } catch (err) {
         console.error('Error fetching Medium posts:', err);
-        setError('Failed to load Medium posts');
+        setError('Error al cargar los posts de Medium');
         
         // Fallback to original hardcoded articles if fetch fails
         const fallbackArticles: ArticleCard[] = [
           {
             title: "How to Think Like a Tech Lead: Shift Your Mindset from Code to Leader",
             description: "Learn how to think like a tech lead and level up your software engineering career. Build the mindset, skills, and lead...",
-            date: "Jun 7",
+            date: "7 Jun",
             url: "https://medium.com/@roberzet/how-to-think-like-a-tech-lead-shift-your-mindset-from-coder-to-leader-1a0255ef5d32"
           },
           {
             title: "How AI Is Changing the Work of Software Engineers (And Why You Should Embrace It Now)",
             description: "How I use AI daily to write better code, save time, and stay sharp as a developer and tech lead. Continue reading on Medium »",
-            date: "May 31",
+            date: "31 May",
             url: "https://medium.com/@roberzet/how-ai-is-changing-the-work-of-software-engineers-and-why-you-should-embrace-it-now-9013bf7b802f"
           },
           {
             title: "Cómo la IA está cambiando el trabajo del ingeniero de software (y por qué deberías aprovecharlo ya)",
             description: "No es el fin del coding, es el inicio de una nueva forma de programar con IA. Continue reading on Medium »",
-            date: "May 28",
+            date: "28 May",
             url: "https://medium.com/@roberzet/cómo-la-ia-está-cambiando-el-trabajo-del-ingeniero-de-software-y-por-qué-deberías-aprovecharlo-ya-603ae631ddbc"
           }
         ];
@@ -126,10 +126,10 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
       <section className="max-w-6xl mx-auto mt-20 sm:mt-24 md:mt-32">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Read Roberto Franco <span className="text-gray-600">on Medium</span>
+            Lee a Roberto Franco <span className="text-gray-600">en Medium</span>
           </h2>
           <p className="text-gray-600 text-lg">
-            Check out my latest insights and tips
+            Revisa mis últimas ideas y consejos
           </p>
         </div>
         
@@ -154,14 +154,14 @@ export default function MediumSection({ contentLoaded }: MediumSectionProps) {
         style={getAnimationDelay(0.4)}
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Read Roberto Franco <span className="text-gray-600">on Medium</span>
+          Lee a Roberto Franco <span className="text-gray-600">en Medium</span>
         </h2>
         <p className="text-gray-600 text-lg">
-          Check out my latest insights and tips
+          Revisa mis últimas ideas y consejos
         </p>
         {error && (
           <p className="text-red-500 text-sm mt-2">
-            {error} - Showing cached articles
+            {error} - Mostrando artículos en caché
           </p>
         )}
       </div>

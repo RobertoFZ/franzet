@@ -24,11 +24,11 @@ export default function SupportSection({ contentLoaded }: SupportSectionProps) {
         </div>
         
         <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-          Support My Work
+          Apoya mi trabajo
         </h3>
         
         <p className="text-gray-600 mb-8 max-w-md mx-auto text-sm sm:text-base">
-          If my content and mentoring insights have helped you grow as a developer, consider buying me a coffee! ☕
+          Si mi contenido y mis ideas de mentoría te han ayudado a crecer como desarrollador, ¡Reg&aacute;lame un café! ☕
         </p>
         
         <a
@@ -37,14 +37,11 @@ export default function SupportSection({ contentLoaded }: SupportSectionProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-[#ff4d6d] hover:bg-[#e63c5e] text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         >
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31.84 2.41 2 2.83V21c0 .55.45 1 1 1s1-.45 1-1v-1.17c1.16-.42 2-1.52 2-2.83 0-1.66-1.34-3-3-3zM7 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm10-3c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S9.5 3.17 9.5 4v4.68C6.63 9.36 5 11.93 5 15v2c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-2z"/>
-          </svg>
-          Buy me a coffee
+          BuyMeACoffee
         </a>
         
         <p className="text-gray-500 text-xs mt-4">
-          Your support helps me create more content and mentoring resources
+          Tu apoyo me ayuda a crear más contenido y recursos de mentoría
         </p>
       </div>
     </section>

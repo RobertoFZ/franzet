@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
-  description: "1-on-1 mentoring that turns junior developers into confident, job-ready engineers. Book a free strategy session with Roberto Franco today.",
+  description: "Mentoría 1 a 1 que convierte a desarrolladores junior en ingenieros seguros y listos para el entorno profesional. Reserva una sesión de estrategia gratuita conmigo hoy.",
   robots: "index, follow",
   alternates: {
     canonical: "https://franzet.com/",
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://franzet.com/",
     title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
-    description: "Hands-on guidance, custom roadmaps, and accountability to help you ship production-ready code faster.",
-    siteName: "Roberto Franco Mentoring",
+    description: "Orientación práctica, hojas de ruta personalizadas y responsabilidad para ayudarte a enviar código listo para producción más rápido.",
+    siteName: "Mentoría Roberto Franco",
     images: [
       {
         url: "https://franzet.com/og_cover.png",
-        alt: "Roberto Franco - Software Engineer Mentor",
+        alt: "Roberto Franco - Mentor de Ingeniería de Software",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Roberto Franco · Software-Engineering Mentor & Growth Partner",
-    description: "Level-up your dev career with 1-on-1 mentoring. Book a free strategy session.",
+    description: "Mejora tu carrera de desarrollador con mentoría 1 a 1. Reserva una sesión de estrategia gratuita.",
     site: "@RobeertoFZ",
     creator: "@RobeertoFZ",
     images: ["https://franzet.com/og_twitter_cover.png"],
@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
@@ -63,8 +63,8 @@ export default function RootLayout({
               "@type": ["Person", "ProfessionalService"],
               "name": "Roberto Franco",
               "alternateName": ["Roberto Franco Franzet", "RobertoFZ"],
-              "jobTitle": "Software Engineering Mentor & Tech Lead",
-              "description": "Senior software engineer, tech lead, and mentor specializing in revenue management systems, AI integration, and developer career growth. Helping junior developers become confident, job-ready engineers.",
+              "jobTitle": "Mentor de Ingeniería de Software y Tech Lead",
+              "description": "Ingeniero de software senior, tech lead y mentor especializado en sistemas de revenue management, integración de IA y crecimiento de carrera de desarrolladores. Ayudando a desarrolladores junior a convertirse en ingenieros seguros y listos para el entorno profesional.",
               "url": "https://franzet.com/",
               "image": {
                 "@type": "ImageObject",
@@ -81,25 +81,25 @@ export default function RootLayout({
               ],
               "worksFor": {
                 "@type": "Organization",
-                "name": "Roberto Franco Mentoring",
+                "name": "Mentoría Roberto Franco",
                 "url": "https://franzet.com/"
               },
               "knowsAbout": [
-                "Software Engineering",
-                "Technical Leadership",
-                "Revenue Management",
+                "Ingeniería de Software",
+                "Liderazgo Técnico",
+                "Gestión de Ingresos",
                 "JavaScript",
                 "TypeScript",
                 "React",
                 "Next.js",
-                "AI Development",
-                "Mentoring",
-                "Career Development"
+                "Desarrollo de IA",
+                "Mentoría",
+                "Desarrollo de Carrera"
               ],
               "offers": {
                 "@type": "Service",
-                "name": "Software Engineering Mentoring",
-                "description": "1-on-1 mentoring for junior developers and engineers looking to advance their careers"
+                "name": "Mentoría de Ingeniería de Software",
+                "description": "Mentoría 1 a 1 para desarrolladores junior e ingenieros que buscan avanzar en sus carreras"
               },
               "contactPoint": {
                 "@type": "ContactPoint",

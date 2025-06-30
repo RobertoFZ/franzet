@@ -16,11 +16,11 @@ export default function ProjectsPage() {
     setContentLoaded(true);
     
     // Update page title and meta description for SEO
-    document.title = "Products | Roberto Franco - Software Engineering Mentor";
+    document.title = "Productos | Roberto Franco - Mentor de Ingeniería de Software";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Explore Roberto Franco&apos;s real products including Zinual financial management app and other applications designed to solve real-world problems.');
+      metaDescription.setAttribute('content', 'Explora los productos reales de Roberto Franco incluyendo la aplicación de gestión financiera Zinual y otras aplicaciones diseñadas para resolver problemas del mundo real.');
     }
   }, []);
 
@@ -33,10 +33,10 @@ export default function ProjectsPage() {
           className={`transition-opacity duration-700 ${contentLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-            My <span className="text-[#ff4d6d]">Products</span>
+            Mis <span className="text-[#ff4d6d]">Productos</span>
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl">
-            Real applications and products I&apos;ve built to solve actual problems and create meaningful value for users.
+            Aplicaciones y productos reales que he construido para resolver problemas actuales y crear valor significativo para los usuarios.
           </p>
         </div>
       </div>

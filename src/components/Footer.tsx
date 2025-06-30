@@ -19,7 +19,7 @@ export default function Footer({ contentLoaded }: FooterProps) {
             Roberto Franco
           </h3>
           <p className="text-gray-600 text-sm">
-            Software Engineering Mentor & Growth Partner
+            Mentor de Ingeniería de Software y Growth Partner
           </p>
         </div>
 
@@ -72,10 +72,10 @@ export default function Footer({ contentLoaded }: FooterProps) {
         {/* Copyright */}
         <div className="text-center md:text-right">
           <p className="text-gray-600 text-sm">
-            © {currentYear} Roberto Franco. All rights reserved.
+            © {currentYear} Roberto Franco.<br/>Todos los derechos reservados.
           </p>
           <p className="text-gray-500 text-xs mt-1">
-            Built with ❤️ and Next.js
+            Construido con ❤️ y Next.js
           </p>
         </div>
       </div>

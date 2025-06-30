@@ -17,7 +17,7 @@ export default function ProjectsSection({ }: ProjectsSectionProps) {
   const projects: Project[] = [
     {
       title: "Zinual",
-      description: "A comprehensive financial management application that prioritizes your privacy and data control. Features advanced budget management, debt tracking, vehicle expense monitoring, and actionable financial insights—all while keeping your sensitive financial data completely private with local storage and no third-party access.",
+      description: "Una aplicación integral de gestión financiera que prioriza tu privacidad y control de datos. Cuenta con gestión avanzada de presupuestos, seguimiento de deudas, monitoreo de gastos de vehículos y análisis financieros accionables, todo mientras mantiene tus datos financieros sensibles completamente privados y sin acceso de terceros.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS", "Vercel"],
       featured: true,
       liveUrl: "https://zinual.com"
@@ -36,13 +36,13 @@ export default function ProjectsSection({ }: ProjectsSectionProps) {
             {/* Product Count */}
             <div>
               <div className="text-3xl sm:text-4xl font-bold text-[#ff4d6d] mb-2">1</div>
-              <div className="text-gray-600 font-medium">Live Product</div>
+              <div className="text-gray-600 font-medium">Producto Activo</div>
             </div>
             
             {/* Main Message */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold mb-2">Built with Purpose</h2>
-              <p className="text-gray-600">Creating solutions that solve real problems and deliver genuine value to users.</p>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2">Mi propósito</h2>
+              <p className="text-gray-600">Creo soluciones que resuelven problemas reales y entregan valor genuino a los usuarios.</p>
             </div>
             
             {/* CTA */}
@@ -53,7 +53,7 @@ export default function ProjectsSection({ }: ProjectsSectionProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#ff4d6d] hover:bg-[#e63c5e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
               >
-                Try Zinual Free
+                Prueba Zinual Gratis
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
                 </svg>
@@ -76,7 +76,7 @@ export default function ProjectsSection({ }: ProjectsSectionProps) {
               </h3>
               {project.featured && (
                 <span className="bg-[#ff4d6d] text-white text-xs px-2 py-1 rounded-full font-medium">
-                  Featured
+                  Destacado
                 </span>
               )}
             </div>
@@ -111,7 +111,7 @@ export default function ProjectsSection({ }: ProjectsSectionProps) {
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
                   </svg>
-                  Go to app
+                  Ir a la aplicación
                 </a>
               )}
             </div>
