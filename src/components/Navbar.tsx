@@ -20,6 +20,14 @@ export default function Navbar({ contentLoaded }: NavbarProps) {
           >
             Inicio
           </Link>
+          {/*
+          <Link 
+            href="/mentorias" 
+            className="text-gray-700 hover:text-[#ff4d6d] transition-colors duration-300 font-medium"
+          >
+            Mentoría
+          </Link>
+          */}
           <Link 
             href="/projects" 
             className="text-gray-700 hover:text-[#ff4d6d] transition-colors duration-300 font-medium"
