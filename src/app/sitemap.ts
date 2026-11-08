@@ -1,33 +1,16 @@
-import { MetadataRoute } from 'next'
-
+import type { MetadataRoute } from "next";
+import { cases } from "@/lib/cases";
+import { site } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://franzet.com'
-  
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    // Add more pages as you create them
-    // {
-    //   url: `${baseUrl}/about`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.8,
-    // },
-    // {
-    //   url: `${baseUrl}/blog`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'weekly',
-    //   priority: 0.7,
-    // }
-  ]
-} 
+    "",
+    "/asesorias",
+    "/casos",
+    "/privacidad",
+    ...cases.map((project) => `/casos/${project.slug}`),
+  ].map((path) => ({
+    url: `${site.url}${path}`,
+    changeFrequency: "monthly",
+    priority: path === "" ? 1 : path === "/privacidad" ? 0.3 : 0.8,
+  }));
+}
