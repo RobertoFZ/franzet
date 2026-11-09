@@ -692,28 +692,6 @@ h3 {
 .rf-form .rf-action {
   align-self: flex-start;
 }
-.rf-form-confirmation {
-  padding: 25px;
-  background: var(--rf-green);
-  border-radius: 6px;
-}
-.rf-confirm-mark {
-  display: block;
-  color: var(--rf-accent);
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-.rf-form-confirmation h3 {
-  font: 28px/1.2 var(--rf-display);
-  margin-top: 12px;
-}
-.rf-form-confirmation p:not(.rf-eyebrow) {
-  color: var(--rf-muted);
-  margin-top: 16px;
-}
-.rf-form-confirmation .rf-text-link {
-  margin-top: 20px;
-}
 .rf-faq h2 {
   margin-bottom: 25px;
 }
@@ -1163,50 +1141,9 @@ textarea {
 .rf-form .rf-action {
   min-height: 48px;
 }
-.rf-consent {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: flex-start;
-  gap: 11px !important;
-  font-size: 12px !important;
-  color: var(--rf-muted);
-  font-weight: 400 !important;
-}
-.rf-consent input {
-  width: 17px;
-  height: 17px;
-  margin: 3px 0 0;
-  flex-shrink: 0;
-  accent-color: var(--rf-accent);
-}
-.rf-consent a,
-.rf-form-error a,
 .rf-prose a {
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-.rf-honeypot {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.rf-form-error {
-  background: var(--rf-soft);
-  padding: 16px;
-  border-left: 3px solid var(--rf-accent);
-  border-radius: 4px;
-  font-size: 14px;
-}
-.rf-form-error p {
-  margin-bottom: 8px;
-}
-.rf-form-confirmation {
-  align-self: start;
-}
-.rf-form-confirmation p:not(.rf-eyebrow) {
-  font-size: 14px;
 }
 .rf-faq summary {
   font-size: 16px;
@@ -1480,4 +1417,58 @@ textarea {
 
 .rf-form select {
   min-height: 48px;
+}
+
+.rf-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+.rf-form-privacy {
+  color: var(--rf-muted);
+  font-size: 13px;
+}
+.rf-form-privacy a,
+.rf-form .rf-caption a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.rf-draft {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--rf-green);
+  border-radius: 6px;
+}
+.rf-draft h3 {
+  font: 28px/1.2 var(--rf-display);
+  margin-block: 12px;
+}
+.rf-draft > p:not(.rf-eyebrow) {
+  font-size: 14px;
+  color: var(--rf-muted);
+}
+.rf-draft .rf-text-link {
+  margin-top: 12px;
+}
+.rf-preview-label {
+  display: block;
+  margin-block: 18px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.rf-message-preview {
+  width: 100%;
+  min-height: 240px;
+  padding: 14px;
+  border: 1px solid var(--rf-line);
+  border-radius: 4px;
+  background: var(--rf-paper);
+  color: var(--rf-ink);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+}
+.rf-copy-status {
+  margin-top: 12px;
 }

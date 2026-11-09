@@ -15,8 +15,9 @@ export default function PrivacyPage() {
       </h1>
       <h2>Quién recibe tu solicitud</h2>
       <p>
-        Roberto Franco recibe las solicitudes de asesoría de este sitio. Puedes
-        contactarme en <a href={`mailto:${site.email}`}>{site.email}</a>.
+        Roberto Franco recibe las solicitudes que envías desde tu cuenta de
+        correo. Puedes contactarme en{" "}
+        <a href={`mailto:${site.email}`}>{site.email}</a>.
       </p>
       <h2>Qué información compartes</h2>
       <p>
@@ -28,16 +29,17 @@ export default function PrivacyPage() {
       <h2>Para qué la uso</h2>
       <p>
         Uso los datos para evaluar si puedo ayudarte, responder tu solicitud y,
-        si acordamos trabajar juntos, coordinar la asesoría. Enviar el
-        formulario no te suscribe a una lista de publicidad.
+        si acordamos trabajar juntos, coordinar la asesoría. Preparar o enviar
+        un correo no te suscribe a una lista de publicidad.
       </p>
       <h2>Cómo se procesa</h2>
       <p>
-        El sitio se aloja en Vercel. Cuando el formulario está habilitado,
-        Resend procesa el envío del correo que recibiré con tu solicitud. Tu
-        navegador no guarda el contenido del formulario en almacenamiento
-        persistente. El proveedor de correo y mi buzón pueden conservar el
-        mensaje para gestionar la conversación.
+        Los datos del formulario se procesan en tu navegador para preparar un
+        borrador de correo o copiar su contenido. El sitio no los envía a un
+        servidor ni los guarda en almacenamiento persistente. Solo recibiré el
+        mensaje cuando lo envíes desde tu aplicación de correo. Tu proveedor de
+        correo y mi buzón pueden conservar el mensaje para gestionar la
+        conversación.
       </p>
       <h2>Medición del sitio</h2>
       <p>
